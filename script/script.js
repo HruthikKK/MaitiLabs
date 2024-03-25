@@ -1,21 +1,7 @@
-// script.js
-
-document.addEventListener("DOMContentLoaded", function() {
-    const menuToggle = document.querySelector('.toggle-btn');
-    const menu = document.querySelector('.menu');
-
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('show-menu');
-    });
+document.getElementById('toggleMenuBtn').addEventListener('click', function() {
+    document.querySelector('.hidden-menu').style.top = document.querySelector('.hidden-menu').style.top === '0%' ? '-600%' : '0%';
 });
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.getElementById('menu-toggle');
-    const slidingWindow = document.getElementById('sliding-window');
-
-    // Toggle sliding window and menu on button click
-    menuToggle.addEventListener('click', function () {
-        slidingWindow.classList.toggle('active');
-    });
+document.getElementById('closeBtn').addEventListener('click', function() {
+    document.querySelector('.hidden-menu').style.top = document.querySelector('.hidden-menu').style.top === '0%' ? '-600%' : '0%';
 });

@@ -28,17 +28,62 @@ html{
 
 .logo {
   overflow: hidden; 
-
 }
 .logo img {
-
+  
   width: 50px;
   height: auto;
   margin-left: 50px;
   padding-right: 10px;
 }
+
+.hidden-menu {
+  position: fixed;
+  top: -600%;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  transition: top 0.3s ease;
+  z-index: 999;
+}
+
+.hidden-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hidden-menu ul li {
+  padding: 15px 0;
+  text-align: center;
+}
+
+#closeBtn{
+  color: #007bff;
+  cursor: pointer;
+}
+.hidden-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+.menuBtn{
+  padding: 60px;
+}
+.toggle-menu-btn {
+  /* position: fixed; */
+  /* top: 50px;
+  right: 80px; */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  /* z-index: 1000; */
+}
+
 .menu {
-  display: flex; 
+  display: none; 
   flex-direction: row; 
   text-align: center; 
 }
@@ -71,6 +116,7 @@ html{
 }
 
 .login{
+  display: none;
   margin-right: 10vw;
   width: 175px;
 }
@@ -272,6 +318,72 @@ height: 100px;
   margin-bottom: -2px;
 }
 
+@media screen and (min-width: 768px) {
+  .hidden-menu{
+    display: none;
+  } 
+  .menuBtn{
+    display: none;
+  }
+  .menu {
+    display: flex; 
+    flex-direction: row; 
+    text-align: center; 
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .menu li {
+    display: inline-block; 
+    margin-right: 20px; 
+  }
+  
+  .menu li:last-child {
+    margin-right: 0; 
+  }
+  
+  .menu li a {
+    color: #000; 
+    text-decoration: none; 
+    transition: all 0.2s ease-in-out; 
+  }
+  
+  .menu li a:hover {
+    position: relative;
+    bottom: 2px;
+    color: #496c62;
+  }
+  
+  .login{
+    display: block;
+    margin-right: 10vw;
+    width: 175px;
+  }
+  
+  .login a{
+    background-color: rgb(3, 28, 3);
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out; 
+  
+  }
+  .login a:hover{
+    background-color: #c2c2c2;
+    color: #000;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+}
 
 
 
