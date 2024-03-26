@@ -59,7 +59,7 @@ html{
 }
 
 .hidden-menu ul {
-  background-color: transparent;
+  background-color: #fff;
   backdrop-filter: blur(10px);
   list-style-type: none;
   padding: 0;
