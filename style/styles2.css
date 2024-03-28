@@ -689,7 +689,7 @@
 .community{
   /* height: 70vh; */
   background-color: #dca470;
-  padding: 50px;
+  padding: 50px 50px 0px;
 }
 .community h2{
   font-size: 2rem;
@@ -762,6 +762,10 @@
     font-size: 1.3rem;
     border-radius: 20px;
     text-decoration: none;
+  }
+  #awareness{
+    height: 50px;
+    background-color: #dca470;
   }
   @media screen and (min-width: 768px){
     .community{
@@ -841,10 +845,10 @@
         border-radius: 20px;
         text-decoration: none;
       }
-  }
-  #awareness{
-    height: 100px;
-  background-color: #dca470;
+      #awareness{
+        height: 100px;
+        background-color: #dca470;
+      }
   }
   
 
