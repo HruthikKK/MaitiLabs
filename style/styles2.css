@@ -686,9 +686,57 @@
   }
   }
 
+.community{
+  height: 70vh;
+  padding: 50px;
+}
+.community h2{
+  font-size: 2rem;
+  text-align: center;
+}
 
-
-
+  .slider {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  .slide {
+    flex: 0 0 100%; /* Each slide takes up 100% width */
+    padding: 50px;
+    gap: 15px;
+    display: flex;
+  }
+  
+  .slide img {
+    width: 50%; /* Each image takes up 50% width */
+    background-color: #a4a4a4;
+    border-radius: 20px;
+  }
+  
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
 
 
 
