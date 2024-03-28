@@ -687,7 +687,8 @@
   }
 
 .community{
-  height: 70vh;
+  /* height: 70vh; */
+  background-color: #dca470;
   padding: 50px;
 }
 .community h2{
@@ -708,13 +709,14 @@
   
   .slide {
     flex: 0 0 100%; /* Each slide takes up 100% width */
-    padding: 50px;
-    gap: 15px;
+    padding: 40px 15px 20px;
+    gap: 10px;
     display: flex;
+    justify-content: space-around;
   }
   
   .slide img {
-    width: 50%; /* Each image takes up 50% width */
+    width: 120px; /* Each image takes up 50% width */
     background-color: #a4a4a4;
     border-radius: 20px;
   }
@@ -735,6 +737,114 @@
   
   .next {
     right: 0;
+  }
+
+  .joinUs{
+    padding: 20px 0px;
+    display: block;
+    text-align: center;
+  }
+
+  .joinUs a{
+    background-color: rgb(3, 28, 3);
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out; 
+
+  }
+  .joinUs a:hover{
+    background-color: #c2c2c2;
+    color: #000;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 768px){
+    .community{
+      /* height: 70vh; */
+      padding: 100px 100px 0;
+    }
+    .community h2{
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    
+      .slider {
+        position: relative;
+        max-width: 600px;
+        margin: auto;
+        overflow: hidden;
+      }
+      
+      .slides {
+        display: flex;
+      }
+      
+      .slide {
+        flex: 0 0 100%; /* Each slide takes up 100% width */
+        padding: 80px 15px 80px;
+        gap: 15px;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .slide img {
+        width: 230px; /* Each image takes up 50% width */
+        background-color: #a4a4a4;
+        border-radius: 20px;
+      }
+      
+      .communityButton{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        font-weight: bold;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      
+      .prev {
+        left: 0;
+      }
+      
+      .next {
+        right: 0;
+      }
+    
+      .joinUs{
+        padding: 20px 0px;
+        display: block;
+        text-align: center;
+      }
+    
+      .joinUs a{
+        background-color: rgb(3, 28, 3);
+        color: #fff;
+        text-align: center;
+        font-size: 1.4rem;
+        padding: 10px 35px;
+        border-radius: 25px;
+        text-decoratio: none;
+        transition: all 0.2s ease-in-out; 
+    
+      }
+      .joinUs a:hover{
+        background-color: #c2c2c2;
+        color: #000;
+        font-size: 1.3rem;
+        border-radius: 20px;
+        text-decoration: none;
+      }
+  }
+  #awareness{
+    height: 100px;
+  background-color: #dca470;
   }
   
 
