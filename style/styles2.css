@@ -855,7 +855,7 @@
     background-image: url(../images/awareness.jpg);
     color: #fff;
     text-align: center;
-    padding: 100px 100px;
+    padding: 100px 100px 30px;
   }
   
   .a_portalBtn,.careersBtn,.joinUsBtn{
@@ -908,7 +908,7 @@
     background-image: url(../images/joinus.jpg);
     color: #fff;
     text-align: center;
-    padding: 100px;
+    padding: 100px 100px 30px;
   }
   
 
@@ -916,7 +916,7 @@
     .awarenessPortal, .joinUsPortal{
       color: #fff;
       text-align: center;
-      padding: 200px 200px 100px;
+      padding: 200px 200px 150px;
     }
     .awarenessPortal h1,.joinUsPortal h1{
       font-size: 3rem;
