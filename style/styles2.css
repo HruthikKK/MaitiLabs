@@ -916,7 +916,7 @@
     .awarenessPortal, .joinUsPortal{
       color: #fff;
       text-align: center;
-      padding: 200px 200px 150px;
+      padding: 200px 200px 30px;
     }
     .awarenessPortal h1,.joinUsPortal h1{
       font-size: 3rem;
@@ -958,16 +958,177 @@
       text-decoration: none;
     }
     .a_portalBtn a:hover{
-      background-color: rgb(3, 28, 3);;
+      background-color: rgb(3, 28, 3);
       color: #e4e4e4;
     }
     #career{
-      height: 100px;
+      height: 200px;
       background-color: transparent;
     }
     #contact{
-      height: 100px;
+      height: 200px;
       background-color: transparent;
     }
   }
+
+  .contactBox {
+  padding: 150px;
+  text-align: center;
+  }
+.contactBox_grid{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.contactBox h1{
+  color: rgb(3, 28, 3);
+  margin-bottom: 20px;
+}
+.contactBox .contactBox_grid p{
+  color: rgb(3, 28, 3);
+  text-align: center;
+}
+.contactBox_grid:nth-child(2){
+  margin-bottom: 20px;
+}
+.contactBox .contactBox_grid input,.contactBox .contactBox_grid textarea{
+  margin: 10px;
+  padding: 5px;
+  font-size: 1rem;
+}
+.contactBox .contactBox_grid textarea{
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.contactUsBtn   {
+  padding: 0 10px;
+}
+.contactBox_grid a{
+  display: block;
+  background-color: rgb(3, 28, 3);
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out; 
+  font-weight: bold;
+}
+.contactBox_grid a:hover{
+  background-color: #c2c2c2;
+  color: #000;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.contactBox_link{
+  display: none;
+}
+
+@media screen and (min-width: 768px){
+  .contactBox h1{
+    font-size: 3rem
+  }
+  .cb_Container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .contactBox_grid {
+    flex: 2;
+    display: grid;
+    padding: 10px;
+    padding-right: 10%;
+    padding-left: 15%;
+    margin-top: 40px;
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 10px; /* Gap between grid items */
+    border-right: solid;
+  }
+
+  .contactBox_grid input,
+  .contactBox_grid textarea {
+      font-size: 1.5rem;
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+  }
+  .contactBox .contactBox_grid input,.contactBox .contactBox_grid textarea{
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.2rem;
+  }
+
+  .contactBox_grid p:nth-child(1){
+    grid-row: 1;
+    font-size: 1.3rem;
+    grid-column-start: 1;
+      grid-column-end: 3;
+  }
+  .contactBox_grid p:nth-child(2){
+    grid-row: 2;
+    font-size: 1.3rem;
+    grid-column-start: 1;
+      grid-column-end: 3;
+  }
+  .contactBox_grid input[type="text"],
+  .contactBox_grid input[type="email"] {
+      grid-row: 3; /* First row */
+  }
+
+  .contactBox_grid textarea {
+      grid-row: 4; /* Second row */
+      grid-column-start: 1;
+      grid-column-end: 3;
+  }
+  .contactBox_grid .contactUsBtn {
+      grid-row: 5; /* Second row */
+      grid-column-start: 1;
+      grid-column-end: 3;
+  }
+
+  .contactBox_link{
+    flex: 1;
+    transition: all 0.2s ease-in-out;  
+    display:  flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding: 40px 30px;
+    text-align: left;
+  }
+  .contactBox_link h2{
+    margin-bottom: 15px;
+  }
+  .contactBox_link h2:nth-child(3){
+    margin-top: 30px;
+  }
+  .contactBox_link .cB_link{
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
+  .contactBox_link .cB_link i{
+    color: #000;
+    margin-right: 15px;
+  }
+  .contactBox_link a{
+    text-decoration: none;
+    color: #000;
+  }
+  .contactBox_link a:hover{
+    color: #a4a4a4;
+  }
+
+}
+
+.video_Container {
+  width: 100%; /* Ensure the container spans the full width */
+  overflow: hidden; /* Prevent horizontal overflow */
+}
+
+.video_Container video {
+  width: 100%; /* Make the video fill the entire width of its container */
+  height: auto; /* Maintain the aspect ratio */
+}
 
