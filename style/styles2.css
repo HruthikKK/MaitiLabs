@@ -855,7 +855,7 @@
     background-image: url(../images/awareness.jpg);
     color: #fff;
     text-align: center;
-    padding: 100px 100px 30px;
+    padding: 100px 50px 30px;
   }
   
   .a_portalBtn,.careersBtn,.joinUsBtn{
@@ -908,7 +908,7 @@
     background-image: url(../images/joinus.jpg);
     color: #fff;
     text-align: center;
-    padding: 100px 100px 30px;
+    padding: 100px 50px 30px;
   }
   
 
@@ -972,8 +972,8 @@
   }
 
   .contactBox {
-  padding: 150px;
-  text-align: center;
+    padding: 70px;
+    text-align: center;
   }
 .contactBox_grid{
   display: flex;
@@ -1028,6 +1028,10 @@
 }
 
 @media screen and (min-width: 768px){
+  .contactBox {
+  padding: 150px;
+  text-align: center;
+  }
   .contactBox h1{
     font-size: 3rem
   }
@@ -1084,9 +1088,16 @@
       grid-column-end: 3;
   }
   .contactBox_grid .contactUsBtn {
+
       grid-row: 5; /* Second row */
       grid-column-start: 1;
       grid-column-end: 3;
+  }
+  .contactBox_grid a{
+    font-size: 1.3rem;
+  }
+  .contactBox_grid a:hover{
+    font-size: 1.4rem;
   }
 
   .contactBox_link{
@@ -1099,6 +1110,7 @@
     text-align: left;
   }
   .contactBox_link h2{
+    font-size: 2rem;
     margin-bottom: 15px;
   }
   .contactBox_link h2:nth-child(3){
@@ -1106,7 +1118,7 @@
   }
   .contactBox_link .cB_link{
     margin-bottom: 15px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .contactBox_link .cB_link i{
     color: #000;
@@ -1132,3 +1144,161 @@
   height: auto; /* Maintain the aspect ratio */
 }
 
+
+.aboutLast{
+  padding: 80px 50px 0px;
+}
+
+.aboutLast .lastLogo img{
+  width: 60px;
+  height: auto;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.aboutLast .lastLogo span{
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  font-size: 1.5rem ;
+}
+.aboutLast .para{
+  padding-top: 50px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.aboutLast .flex_Btns{
+  margin-top: 50px;
+}
+
+.aboutLast .cell-1,
+  .aboutLast .cell-2{
+    width: 150px;
+  }
+  .aboutLast .cell-1 a,
+  .aboutLast .cell-2 a,.init_more a{
+    background-color: rgb(3, 28, 3);
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+
+  }
+  .aboutLast .cell-1 a:hover,
+  .aboutLast .cell-2 a:hover {
+    background-color: #c2c2c2;
+    color: #000;
+    font-size: 1.rem;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+   .aboutLast_mob{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: rgb(134, 165, 134);  
+  }
+   .aboutLast_mob i{
+    color: #000;  
+  }
+
+  .aboutLast_desk{
+    display: none;
+  }
+
+
+  @media screen and (min-width: 768px){
+    .aboutLast_mob{
+      display: none;
+    }
+
+    .aboutLast{
+      padding: 120px 60px 80px;
+      display: flex;
+    }
+
+    .aboutLast_common{
+      flex: 1;
+    }
+    
+    .aboutLast .lastLogo img{
+      width: 80px;
+      height: auto;
+      margin-left: 20px;
+      padding-right: 10px;
+    }
+    
+    .aboutLast .lastLogo span{
+      padding: 10px;
+      display: flex;
+      text-align: center;
+      font-size: 2rem ;
+    }
+    .aboutLast .para{
+      padding-top: 50px;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+    
+    .aboutLast .flex_Btns{
+      margin-top: 50px;
+      justify-content: left;
+    }
+    
+    .aboutLast .cell-1,
+      .aboutLast .cell-2{
+        width: 150px;
+      }
+      .aboutLast .cell-1 a,
+      .aboutLast .cell-2 a,.init_more a{
+        background-color: rgb(3, 28, 3);
+        color: #fff;
+        display: block;
+        text-align: center;
+        font-size: 1.3rem;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+    
+      }
+      .aboutLast .cell-1 a:hover,
+      .aboutLast .cell-2 a:hover {
+        background-color: #c2c2c2;
+        color: #000;
+        font-size: 1.rem;
+        border-radius: 20px;
+        text-decoration: none;
+      }
+
+      .aboutLast_desk{
+        flex: 1;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .aboutLast_desk h2{
+        color: rgb(3, 28, 3);
+        font-size: 2rem;
+        margin-bottom: 25px;
+      }
+      .aboutLast_desk ul{
+        list-style: none;
+      }
+      .aboutLast_desk ul li{
+        margin-bottom: 20px;
+      }
+      .aboutLast_desk ul a{
+        color: rgb(14, 53, 14);
+        text-decoration: none;
+        font-size: 1.3rem;
+      }
+      .aboutLast_desk ul a:hover{
+        color: rgb(82, 128, 82);
+      }
+  }
