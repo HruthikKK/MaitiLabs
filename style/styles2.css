@@ -519,7 +519,7 @@
     .layout1 .cell-2 a:hover,.init_more a:hover {
       background-color: #c2c2c2;
       color: #000;
-      font-size: 1.2rem;
+      font-size: 1.4rem;
       border-radius: 20px;
       text-decoration: none;
     }
@@ -676,11 +676,11 @@
     font-size: 1em;
   }
   .init a{
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   .init_more a:hover{
-    font-size: 1.1em;
+    font-size: 1.3rem;
   }
   .init p,.init a {
     margin-bottom: -1px;
@@ -835,14 +835,14 @@
         font-size: 1.4rem;
         padding: 10px 35px;
         border-radius: 25px;
-        text-decoratio: none;
+        text-decoration: none;
         transition: all 0.2s ease-in-out; 
     
       }
       .joinUs a:hover{
         background-color: #c2c2c2;
         color: #000;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         border-radius: 20px;
         text-decoration: none;
       }
@@ -973,7 +973,7 @@
   }
 
   .contactBox {
-    padding: 70px;
+    padding: 70px 50px;
     text-align: center;
   }
 .contactBox_grid{
